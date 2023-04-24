@@ -1,5 +1,7 @@
 # LambdaPCA
 
+LambdaPCA provides an Excel LAMBDA function that computes the principal component analysis (PCA) of a data matrix. See <https://en.wikipedia.org/wiki/Principal_component_analysis> for background on PCA.
+
 ## Quickstart
 
 - Create or open an Excel spreadsheet
@@ -20,8 +22,8 @@ See also demo.xlsx, which runs PCA on the classic Iris dataset.
 
 ## Troubleshooting
 
-| Issue               | Possible remediation                                                                            |
-| ------------------- | ----------------------------------------------------------------------------------------------- |
-| Returning `#NAME?`  | Ensure that `PCA_INTERNAL` is correctly named                                                   |
-| Returning `#NUM!`   | Increase the `tolerance` parameter. Try 0.01 as a starting point                                |
-| Returning `#VALUE!` | Either subtract the mean from each column or suppress error by passing -1 as the final argument |
+| PCA returns | Possible remediation                                                                            |
+| ----------- | ----------------------------------------------------------------------------------------------- |
+| `#NAME?`    | Ensure that `PCA_INTERNAL` is correctly named                                                   |
+| `#NUM!`     | Increase the `tolerance` parameter. Try 0.01 as a starting point                                |
+| `#VALUE!`   | Either subtract the mean from each column or suppress error by passing -1 as the final argument |
