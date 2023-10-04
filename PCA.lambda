@@ -1,4 +1,4 @@
-=LAMBDA(array, tolerance, centralityCheck, LET
+=LAMBDA(array, [tolerance], [centralityCheck], LET
   ( tolerance_,  IF(ISOMITTED(tolerance), 0.0000001, tolerance)
   , cCheck_,     IF(ISOMITTED(centralityCheck), 0.0000001, centralityCheck)
   , worstAvg,    MAX(BYCOL(array, LAMBDA(col, AVERAGE(col))))
